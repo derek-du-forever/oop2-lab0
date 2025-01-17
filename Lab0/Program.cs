@@ -92,7 +92,7 @@
             for (int i = 0; i < lineCount; i++)
             {
                 nextLine = streamReader.ReadLine() ?? "";
-                numbers[i] = Convert.ToInt32(nextLine);
+                numbers.Add(Convert.ToInt32(nextLine));
             }
             streamReader.Close();
 
